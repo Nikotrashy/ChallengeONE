@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Encrinptador y desencriptador</title>
+</head>
+
+<body>
+    <main class="content-body">
+
+        <div class="content-from-encripter">
+
+            <div class="image-div">
+                <img src="/images/alura-icon.jpg" alt="alura-logo." class="alura-icon">
+            </div>
+
+            <div class="div-form">
+                <input type="textarea" class="input-text" id="input-text" placeholder="Ingrese el texto aquí">
+                <p>Solo letras minusculas y sin acentos</p>
+                <input type="button" onclick="encrypt(document.getElementById('input-text').value)" value="Encriptar">
+                <input type="button" onclick="decrypt(document.getElementById('input-text').value)"
+                    value="Desencriptar">
+            </div>
+
+        </div>
+
+        <div class="card-of-result">
+            <div class="text-area" id="text-area">
+                <input type="textarea" id="text-result">
+                <img src="" alt="" id="image-on-result">
+                <h4 id="title-on-result">Ningún mensaje fue encontrado</h4>
+                <br>
+                <p id="p-on-result">Ingresa el texto que desees encriptar o desencriptar</p>
+            </div>
+            <input type="button" onclick="copyText()" value="Copiar">
+        </div>
+
+    </main>
+</body>
+<script src="functions.js"></script>
+
+</html>
